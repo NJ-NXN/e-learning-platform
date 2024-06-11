@@ -1,0 +1,569 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Global Tags */
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: rgb(35, 35, 85);
+}
+
+span {
+  font-size: 0.9rem;
+  color: #757373;
+}
+
+h6 {
+  font-size: 1.1rem;
+  color: rgb(24, 24, 49);
+}
+
+/* Navigation */
+nav{
+  position:fixed;
+  width:100%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+  align-items: center;
+  box-shadow: 2px 2px 10px rgba(0 ,0, 0 ,0.15);
+  z-index: 999;
+}
+
+nav img{
+  width:150px;
+  cursor:pointer;
+}
+nav .navigation{
+  display: flex;
+}
+#menu-btn{
+  width: 30px;
+  height: 30px;
+  display: none;
+}
+#menu-close{
+  display: none;
+}
+nav .navigation ul{
+  display:flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav  .navigation ul li{
+  list-style: none;
+  margin-left: 30px;
+}
+
+nav  .navigation ul li a{
+  text-decoration: none;
+  color: rgb(21, 21,100)
+  font-size 16px;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+nav  .navigation ul li a:hover{
+  color: #FDC938;
+
+}
+
+
+/* Home */
+
+#home{
+  
+  background-image: linear-gradient(rgba(9, 5, 54, 0.3), rgba(5, 4, 46, 0.7)), url("images/back.jpg");
+  background-size: cover;
+  background-position: center;
+  width:100%;
+  height:100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top:40px ;
+  
+}
+#home h2{
+  color:#fff;
+  font-size: 2.2rem;
+  letter-spacing: 1px;
+}
+
+
+#home p{
+  width:50%;
+line-height: 25px;
+  color:#fff;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+}
+
+#home .btn{
+  margin-top: 30px;
+
+}
+
+#home a.blue{
+  color:#fff;
+  background-color: rgb(21,21,100);
+}
+
+
+#home a.blue:hover{
+  color: rgb(21,21,100);
+  background-color:#fff;
+  transition:0.3s ease;
+}
+
+
+#home a.yellow{
+  color:#fff;
+  background-color: #FDC938;}
+
+
+
+#home a.yellow:hover{
+    color:#FDC938;
+    background-color: #fff;
+  transition: 0.3s ease;}
+
+
+#home a{
+  text-decoration: none;
+  font-size: 0.9rem;
+  padding: 13px 35px;
+  background-color: #fff;
+  font-family: 600;
+  border-radius: 5px;
+}
+/* features */
+#features {
+  padding: 5vw 8vw 8vw;
+  text-align: center;
+}
+
+#features .fea-base {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  grid-gap: 1rem;
+  margin-top: 50px;
+}
+
+.fea-box {
+  background-color: #F9F9F9;
+  text-align: start;
+}
+
+#features .fea-box i {
+  font-size: 2.3rem;
+  color: rgb(44,44,80);
+}
+
+#features .fea-box h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: rgb(46,46,59);
+  padding: 13px 0 7px 0;
+}
+
+#features .fea-box p {
+  font-size: 1rem;
+  font-weight: 400;
+  color: rgb(46,46,87);
+  padding: 13px 0 7px 0;
+}
+
+/* course */
+/* course */
+#course {
+  padding: 8vw 8vw 0 8vw;
+  text-align: center;
+}
+
+#course .course-box {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Four courses in one row */
+  grid-gap: 1rem;
+  margin-top: 50px;
+}
+
+#course .courses {
+  text-align: start;
+  background: #F9F9F9;
+  height: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+#course .courses img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  background-position: center;
+}
+
+#course .details {
+  padding: 15px, 15px, 0 , 15px;
+}
+
+#course .star {
+  display: flex;
+  align-items: center;
+}
+
+#course .star i {
+  color: #ffcc00; /* Star color */
+  margin-right: 5px;
+}
+
+#course .courses  .cost{
+  background-color: rgb(74,74,136);
+  color: #fff;
+  line-height: 70px;
+  margin-top: 10px;
+  width: 70px;
+  height: 70px;
+  text-align: center;
+  border-radius: 50%;
+  position: absolute;
+  right: 15px;
+  bottom: 60px;
+}
+
+
+/* registration */
+
+#registration {
+  padding: 6vw 8vw 6vw 8vw;
+  background-image: linear-gradient(rgba(99,112,168,0.5), rgba(81,91,233,0.5)), url("images/signup.jpg");
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#registration  .reminder{
+  color: #fff;
+}
+#registration  .reminder h1{
+  color:#fff;
+}
+#registration  .reminder .time{
+  display: flex;
+  margin-top: 40px;
+  align-items: center;
+}
+
+#registration .reminder .time .date{
+  text-align: center;
+  padding: 13px 33px;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(4px);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135,0.37);
+  border-radius: 10px;
+  margin: 0 5px 10px 5px;
+  border: 1px solid rgba(255, 255, 255, 0.18) ;
+  font-size: 1.1rem;
+  font-weight: 600;
+
+}
+
+#registration .form{
+  background: #fff;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  box-shadow:  0 8px 32px 0 rgba(31, 38, 135,0.37);
+}
+#registration .form  input{
+  margin: 15px, 0;
+  padding-bottom: 30px;
+  padding: 35px 30px;
+  margin-top: 30px;
+  border: 1 px solid rgb(84, 40, 241);
+  outline: none;
+  width: 340px;
+}
+#registration .form  input::placeholder{
+  color:#413c3c;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+#registration .form  a.yellow{
+  color:#fff;
+  background-color: #fff; 
+   text-decoration: none;
+  font-size: 0.9rem;
+  padding: 13px 35px;
+  background-color: #FDC938;
+  font-family: 600;
+  border-radius: 5px;
+
+}
+#registration .form .btn{
+  margin-top: 20px;
+}
+
+
+
+#registration  .form  a.yellow:hover{
+
+    color:#FDC938;
+    background-color: #fff;
+  transition: 0.3s ease;}
+
+
+
+
+
+/* experts */
+#experts {
+  padding: 8vw 8vw 0 8vw;
+  text-align: center;
+}
+
+#experts .experts-box {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 1rem;
+  margin-top: 50px;
+}
+
+#experts .experts-box .profiles {
+  background-color: #fafaf1;
+  padding: 30px 10px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.profiles img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.profiles h6 {
+  font-size: 1.2rem;
+  margin: 10px 0 5px;
+}
+
+.profiles p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: #666;
+}
+
+.pro-links-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.pro-links {
+  padding: 10px 13px;
+  border: 1px solid rgb(21, 21, 100);
+  cursor: pointer;
+  border-radius: 50%; /* Rounded border */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+.pro-links i {
+  color: rgb(21, 21, 100);
+  font-size: 1rem;
+}
+
+/* Hover effect */
+.pro-links:hover {
+  background-color: rgb(21, 21, 100);
+}
+
+.pro-links:hover i {
+  color: #fff;
+  background: rgb(21, 21,100);
+  border: 1px solid rgba(21,21,100);
+  cursor: pointer;
+}
+
+/* footer */
+#footer{
+  padding: 8vw;
+  background-color: #101C32;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+#footer .footer-col{
+  padding-bottom: 40px;
+}
+#footer h3{
+  color: rgb(241,240,245);
+  font-weight: 600;
+  padding-bottom: 20px;
+
+}
+#footer  li{
+  list-style: none;
+  color: #7b838a;
+  padding: 10px 0;
+  font-size: 15px;
+  cursor: pointer;
+}
+#footer li:hover{
+  color: rgb(241,240,245);
+}
+#footer p{
+  color: #7b838a;
+}
+#footer .subscribe{
+  margin-top: 20px;
+}
+#footer input{
+  width: 220px;
+  padding: 15px 12px;
+  background: #334f6c;
+  border: none;
+  outline: none;
+  color: #fff;
+}
+#footer .subscribe a {
+  text-decoration: none;
+  font-size: 0.9rem;
+  padding: 12px 15px;
+  background-color: #fff;
+  font-family: 600;
+  
+
+}
+#footer  .subscribe a.yellow{
+  color:#fff;
+  background-color: #FDC938;
+  transition: 0.3s ease;
+}
+
+
+
+#footer .subscribe a.yellow:hover{
+    color:#FDC938;
+    background-color: #fff;
+  transition: 0.3s ease;}
+
+  .footer {
+    padding: 8vw;
+    background-color: #101C32;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    color: white;
+}
+
+.copyright-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.copyright-container p {
+    margin: 0;
+    padding-right: 20px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.links-2 {
+    display: flex;
+    gap: 10px;
+}
+
+.social-links {
+    background-color: grey;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.social-links i {
+    font-size: 20px;
+    color: white;
+}
+
+.social-links i:hover {
+    color: yellow; /* Change color on hover to yellow */
+}
+
+
+
+
+/* About */
+
+/* Blog */
+
+/* Course_inner */
+
+/* contact */
+
+/* responsive */
+
+@media (max-width: 769px) {
+  nav{
+    padding: 15px 20px;
+}
+
+  nav img{
+    width: 130px;
+  }
+  #menu-btn{
+    display: initial;
+  }
+  #menu-close{
+    display: none;
+  }
+  }
+
+
+@media (max-width: 475px) {
+  #registration{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  #registration  .reminder .time{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+}
